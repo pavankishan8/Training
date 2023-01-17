@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h1 style="text-align: center; color: crimson;">Currency Converter</h1>
+    <hr>
+    
+    <div>
+                <label for="amount">Amount to Convert : </label>
+                <input type="text"  placeholder="0.00" id="amount"><br><br>
+    </div>
+
+                <span>From</span>
+                        
+    <select style="text-align: center;" id="selective">
+                            
+                <option value="">Select One…</option>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ECD">ECD</option>
+                            
+    </select>
+                
+                <span>To</span>
+                    
+    <select style="text-align: center;" id="select1">
+                            
+                <option value="">Select One…</option>
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="ECD">ECD</option>
+                            
+    </select><br><br>
+    
+            <div>
+                <button onclick="getresults()">Convert</button>
+                <button onclick="clearVal()">Reset</button>
+            </div>
+           <p id="pCon"></p>
+        
+        <div id="finalAmount" class="text-center">
+            <h2>Converted Amount :</h2>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

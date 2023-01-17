@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./CrudOperation.js"></script>
+</head>
+<body>
+    <div>
+        <input id="txtbook" placeholder="Enter the Fav Book"/>
+        <button onclick="onAddItem()">+</button>
+        <button>x</button>
+        <button>Edit</button>
+        <p id="pDisplay">
+            <ol id="list"/>
+        </p>
+
+    </div>
+
+    <script>
+        const populateWithoutol = function(){
+            let p = document.getElementById("pDisplay");
+            p.innerHTML='<ol>'
+                const data = getAll();
+                for(let i = 0; i < data.length; i++){
+                const line = `<li type="i">${data[i]}
+                <a href="#" onclick="deleteItem(${i})">X</a>
+                <a href="#" onclick="onEdit(${i})">Edit</a>
+                </li>`
+                p.innerHTML += line;
+            }
+            p.innerHTML += "</ol>"
+        }
+
+        const onDelete = function(id){
+            deleteItem(id);
+            alert("Book Deleted Successfully")
+            populate();
+        }
+
+        const onEdit = function(id){
+            const newValue = prompt("Enter the New name for the Book");
+            updateItem(id, newValue);
+            alert("Book name has been Edited")
+            populate();
+        }
+        
+        const populate = function(){
+            let ol = document.getElementById("list");
+            ol.innerHTML ="";
+            const data = getAll();
+            for(let i = 0; i < data.length; i++){
+                const line = `<li>${data[i]}
+                <a href="#" onclick="onDelete(${i})">Delete</a>
+                <a href="#" onclick="onEdit(${i})">Edit</a>
+                </li>`
+                ol.innerHTML += line;
+                
+                
+            }
+        }
+        const onAddItem = function(){
+                const name = document.getElementById("txtbook").value;
+                addItem(name);
+                alert("Book added Successfully")
+                populate();
+    }
+
+    
+
+    
+        addItem("Mirage");
+        addItem("Life and Death");
+        addItem("Rich Dad");
+        addItem("Elon Musk");
+
+        document.getElementById("pDisplay").innerText = myBooks;
+
+    </script>
+</body>
+</html>
