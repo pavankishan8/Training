@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="forms" href="form.js">
+    <title>Temperature</title>
+    <script>
+        function onSubmit(){
+
+            const name = document.getElementById("txtName").value;
+            const Salary = document.getElementById("txtSalary").value;
+            const date = document.getElementById("txtDate").value;
+            const email = document.getElementById("txtEmail").value;
+            const data = {"Name" : name, "Salary" : Salary, "Date" : date, "Email" : email}
+            console.log(data)
+
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Temparature Conversion</h1>
+    <hr>
+    <p style="text-align: center;">
+        <input type="text" id="txtName" placeholder="Enter the Name">
+    </p>
+    
+    <p style="text-align: center;">
+        <input type="number" id="txtSalary" placeholder="Enter the Salary">
+    </p>
+
+    <p style="text-align: center;">
+        <input type="date" id="txtDate" placeholder="Enter the DOB">
+    </p>
+
+    <p style="text-align: center;">
+        <input type="email" id="txtEmail" placeholder="Enter the Email">
+    </p>
+
+    <p style="text-align: center;">
+        <input type="button" onclick="onSubmit()" value="Submit"/>
+        <input type="Reset" value="Clear"/>
+    </p>
+
+</body>
+</html>
