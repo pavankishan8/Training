@@ -1,0 +1,115 @@
+*{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    background-color: rgb(46, 110, 228);
+    padding: 5px;
+}
+
+li:hover{
+    background-color: #a155b9;
+    color: midnightblue;
+}
+
+body{
+    background-color: #165baa;
+    color: brown;
+}
+
+nav{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+a:link{
+    color: red;
+    text-decoration: none;
+    cursor: ;
+}
+
+a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active{
+    color: #a155b9;
+    text-decoration: underline;
+}
+
+div{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+#first{
+    text-indent: 4px;
+    letter-spacing: 1px;
+}
+
+#second{
+    word-spacing: 4px;
+    text-align: justify;
+}
+
+#third{
+    line-height: 2;
+
+}
+
+#fourth{
+    text-shadow: 1px 0.5px;
+    text-transform: uppercase;
+
+}
+
+#fifth{
+    writing-mode: vertical-rl;
+
+}
+
+#smart{
+    border-radius: 25px;
+}
+
+#card{
+    border-radius: 500px;
+    box-shadow: 5px 20px;
+    width: 50%;
+}
+
+#card1{
+    border-radius: 500px;
+    box-shadow: 5px 20px;
+    width: 50%;
+    opacity: 50%;
+}
+
+#card:hover{
+    transform: scale(0.9);
+}
+
+#card1:hover{
+    transform: scale(1.1);
+}

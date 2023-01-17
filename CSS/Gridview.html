@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 20%;
+            float: left;
+            border: 2px blue;
+            background-color: beige;
+            padding: 50px;
+        }
+
+        .div{
+            width: 75%;
+            float: right;
+            padding-top: 50px;
+            border: 2px solid red;
+            background-color: gold;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-4">
+            <div style="padding: 20px; border: 2px solid blue;">Menu Content Here</div>
+        </div>
+
+        <div class="col-8">
+            <div style="padding: 20px; border: 2px solid blue;">Main Content</div>
+            <div class="row">
+                <p id="p1" class="col-5">Child Content 1</p>
+                <p id="p2" class="col-2">Child Content 2</p>
+                <p id="p3" class="col-3">Child Content 3</p>
+            </div>
+        </div>
+</div>
+    </div>
+</body>
+</html>
